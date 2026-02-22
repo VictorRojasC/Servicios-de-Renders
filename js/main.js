@@ -220,17 +220,6 @@ if (quoteClose) {
     };
 }
 
-const EMAIL_ADDRESS = 'arq.victorrojas2716@gmail.com';
-
-// Función para enviar Email (mailto)
-function sendEmailContact(name, phone, email, project, message) {
-    const subject = encodeURIComponent(`Consulta Renders: ${project || 'Estudio de Visualización'}`);
-    const bodyText = `Hola Arq. Victor Rojas, 👋\n\n👤 Nombre: ${name}\n📞 Tel: ${phone}\n✉️ Email: ${email}\n\nInterés en: ${project}\n\n💬 Detalles:\n${message}`;
-    const body = encodeURIComponent(bodyText);
-
-    window.location.href = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${body}`;
-}
-
 // Envío a WhatsApp desde la Modal
 document.getElementById('quoteForm').onsubmit = (e) => {
     e.preventDefault();
@@ -255,23 +244,10 @@ document.getElementById('quoteForm').onsubmit = (e) => {
     const status = document.getElementById('quoteStatus');
     status.innerText = "Abriendo WhatsApp...";
     status.style.color = "#4ade80";
-    setTimeout(() => { status.innerText = ""; }, 3000);
-};
-
-// Botón de Email en la Modal
-document.getElementById('sendEmailBtn').onclick = () => {
-    const name = document.getElementById('quoteUserName').value;
-    const phone = document.getElementById('quoteUserPhone').value;
-    const email = document.getElementById('quoteUserEmail').value;
-    const project = document.getElementById('hiddenProjectName').value;
-    const message = document.getElementById('quoteMessage').value;
-
-    if (!name || !phone || !email) {
-        alert("Por favor, completa Nombre, Teléfono y Correo antes de enviar.");
-        return;
-    }
-
-    sendEmailContact(name, phone, email, project, message);
+    setTimeout(() => {
+        status.innerText = "";
+        quoteModal.classList.remove('active');
+    }, 2000);
 };
 
 // Cierre de modales global
@@ -303,7 +279,6 @@ function initTracking() {
 function initContactForm() {
     const form = document.getElementById('leadForm');
     const submitBtn = document.getElementById('submitBtn');
-    const emailBtn = document.getElementById('mainEmailBtn');
 
     if (!form) return;
 
@@ -324,17 +299,6 @@ function initContactForm() {
             form.reset();
         }, 3000);
     });
-
-    if (emailBtn) {
-        emailBtn.onclick = () => {
-            const name = form.querySelector('[name="name"]').value;
-            const email = form.querySelector('[name="email"]').value;
-            const phone = form.querySelector('[name="phone"]').value;
-
-            if (!name || !email) { alert("Completa tu nombre y correo primero."); return; }
-            sendEmailContact(name, phone, email, "Consultoría General", "Me gustaría obtener una consultoría gratuita.");
-        };
-    }
 }
 
 // 7. Protección de Contenido (Anti-Copia)
