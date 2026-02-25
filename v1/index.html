@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenderStudio AI | Visualización Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container flex-between">
+            <div class="logo">
+                <i data-lucide="box"></i>
+                <span>RENDERSTUDIO<strong>AI</strong></span>
+            </div>
+            <div class="nav-links">
+                <a href="#portfolio">Portafolio</a>
+                <a href="#contacto" class="btn-nav">Agendar Cita</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <header class="hero-slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=90"
+                        alt="Slider 1">
+                    <div class="slide-content container">
+                        <span class="badge">Visualización Premium</span>
+                        <h1>ARQUITECTURA <br><span>QUE SEDUCE.</span></h1>
+                        <p>No hacemos renders, creamos el futuro de tu proyecto con fotorrealismo inmersivo.</p>
+                        <div class="hero-actions">
+                            <a href="#contacto" class="btn btn-fill">Empezar Proyecto</a>
+                            <a href="#portfolio" class="btn btn-line">Ver Portafolio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=90"
+                        alt="Slider 2">
+                    <div class="slide-content container">
+                        <span class="badge">Diseño Inmobiliario</span>
+                        <h1>PIXELES <br><span>CON ALMA.</span></h1>
+                        <p>Cada textura, cada sombra y cada luz cuenta una historia de diseño excepcional.</p>
+                        <div class="hero-actions">
+                            <a href="#contacto" class="btn btn-fill">Agendar Cita</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=90"
+                        alt="Slider 3">
+                    <div class="slide-content container">
+                        <span class="badge">Atención Exclusiva</span>
+                        <h1>LIDERANDO EL <br><span>MERCADO.</span></h1>
+                        <p>Tu visión, nuestra tecnología. El estándar más alto en renders arquitectónicos 2026.</p>
+                        <div class="hero-actions">
+                            <a href="#portfolio" class="btn btn-fill">Explorar Galería</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-nav-prev"><i data-lucide="chevron-left"></i></div>
+            <div class="swiper-nav-next"><i data-lucide="chevron-right"></i></div>
+
+            <div class="hero-scroll">
+                <span>Deslizar</span>
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Immersive Gallery -->
+    <section id="portfolio" class="immersive-gallery">
+        <div class="gallery-track">
+            <!-- Project 1 -->
+            <div class="gallery-item full-width" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=90"
+                    alt="Residencial Premium">
+                <div class="item-info">
+                    <span class="tag">Residencial</span>
+                    <h3>The Glass House</h3>
+                    <p>Integración perfecta entre naturaleza y minimalismo.</p>
+                </div>
+            </div>
+
+            <!-- Grid Row -->
+            <div class="gallery-grid container">
+                <div class="gallery-item half" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80"
+                        alt="Interiorismo">
+                    <div class="item-info">
+                        <span class="tag">Interiorismo</span>
+                        <h3>Loft Industrial</h3>
+                    </div>
+                </div>
+                <div class="gallery-item half" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
+                        alt="Comercial">
+                    <div class="item-info">
+                        <span class="tag">Corporativo</span>
+                        <h3>Skyline Tower</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="gallery-item full-width" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=90"
+                    alt="Lujo">
+                <div class="item-info">
+                    <span class="tag">Lujo</span>
+                    <h3>Marazul Resort</h3>
+                    <p>Visualización fotorrealista para lanzamientos inmobiliarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Quote -->
+    <section class="quote-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h2>"La arquitectura comienza donde termina la ingeniería."</h2>
+            <p>Déjanos darle vida a tu visión.</p>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section id="contacto" class="contact">
+        <div class="container grid-2">
+            <div class="contact-info" data-aos="fade-right">
+                <span class="step-label">Paso Final</span>
+                <h2>TRANSFORMA TU <br>PROYECTO HOY.</h2>
+                <p>Nuestra atención personalizada te garantiza una estrategia visual coherente con tus objetivos
+                    comerciales.</p>
+                <div class="exclusive-badge">
+                    <i data-lucide="award"></i>
+                    <span>Atención Exclusiva <br>1 Proyecto a la vez</span>
+                </div>
+            </div>
+            <div class="form-container" data-aos="fade-left">
+                <form id="leadForm">
+                    <input type="hidden" name="campaign" id="campaignId">
+                    <div class="input-group">
+                        <label>Nombre del Profesional</label>
+                        <input type="text" name="name" required placeholder="Ej. Arq. Daniel Soler">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Corporativo</label>
+                        <input type="email" name="email" required placeholder="daniel@estudio.com">
+                    </div>
+                    <div class="input-group">
+                        <label>WhatsApp Internacional</label>
+                        <input type="tel" name="phone" required placeholder="+57 ...">
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn btn-fill">Obtener Consultoría Gratuita</button>
+                    <p id="formStatus" class="status-msg"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/573200000000" class="whatsapp-btn" target="_blank">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 RenderStudio AI • Visualización de Alto Nivel</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // AOS Init
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Swipe Slider Init
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: "fade",
+            speed: 1500,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-nav-next",
+                prevEl: ".swiper-nav-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
